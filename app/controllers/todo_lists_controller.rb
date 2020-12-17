@@ -21,6 +21,10 @@ class TodoListsController < ApplicationController
   def edit
   end
 
+  # GET - TESTE para o destroy list
+  def destroy
+  end
+
   # POST /todo_lists
   # POST /todo_lists.json
   def create
@@ -53,6 +57,8 @@ class TodoListsController < ApplicationController
 
   # DELETE /todo_lists/1
   # DELETE /todo_lists/1.json
+  #BUG - unable to destroy an list --REVISAR
+
   def destroy
     @todo_list.destroy
     respond_to do |format|
